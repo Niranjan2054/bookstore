@@ -1,7 +1,7 @@
-# neofusionsoc
+# BookStore
 **Verion 1.0.0**
 
-This is the web designing and development project for Neo Fusion School Of Computer.
+This is the web designing and development project for Book Store.
 
 ---
 ## Requirements for local setup:
@@ -15,6 +15,6 @@ This is the web designing and development project for Neo Fusion School Of Compu
 [Sunil Banmala]('banmalasunil0@gmail.com')
 
 ## Copy Right 
-© Neo Fusion School of Computer, Inacho, Bhaktapur, Nepal
+© Khwopa College of Engineering , Liwali Bhaktapur
 
 
