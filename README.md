@@ -6,7 +6,7 @@ This is the web designing and development project for Book Store.
 ---
 ## Requirements for local setup:
 
-[xampp]('https://www.apachefriends.org/download.html')
+[xampp](https://www.apachefriends.org/download.html)
 
 ---
 ## Contributor
