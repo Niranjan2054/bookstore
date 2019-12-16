@@ -1,0 +1,2 @@
+Dec 15, 2019 05:10:37 PM : ( run Query) : SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'last_login'
+Dec 15, 2019 05:10:45 PM : ( run Query) : SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'last_login'

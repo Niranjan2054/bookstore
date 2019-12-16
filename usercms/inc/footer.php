@@ -1,35 +1,29 @@
- <?php 
-    if (getFileName()=='index' || getFileName()=='reset-password') {
-      ?>
-        </body>
-      </html>
-      <?php
-    }else{
-      ?>
-      <!-- footer content -->
-        <footer>
-          <div class="pull-right">
-            Admin Template by <a href="https://facebook.com/niranjan2054" target="_blank">Niranjan Bekoju</a>
-          </div>
-          <div class="clearfix"></div>
-        </footer>
-        <!-- /footer content -->
-      </div>
+
+                    <!-- Footer Start -->
+                    <div class="app-wrapper-footer">
+                        <div class="app-footer">
+                            <div class="app-footer__inner">
+                                <div class="app-footer-left">
+                                    <ul class="nav">
+                                        <li class="nav-item"></li>
+                                        <li class="nav-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="app-footer-right">
+                                    <ul class="nav">
+                                        <li class="nav-item"></li>
+                                        <li class="nav-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <!-- Footer Ends -->
+                </div>
+<!-- Main Body End -->
+                <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        </div>
     </div>
-
-    
-    <!-- jQuery -->
-    <script src="<?php echo JS_PATH; ?>bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="<?php echo JS_PATH; ?>fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="<?php echo JS_PATH; ?>nprogress.js"></script>
-
-    <!-- Custom Theme Scripts -->
-    <script src="<?php echo JS_PATH; ?>custom.min.js"></script>
-  </body>
+<script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
 </html>
-
-      <?php
-    }
-  ?>
