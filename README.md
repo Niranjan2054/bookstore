@@ -6,7 +6,7 @@ This is the web designing and development project for Book Store.
 ---
 ## Requirements for local setup:
 
-[xampp]('https://www.apachefriends.org/download.html')
+[xampp](https://www.apachefriends.org/download.html)
 
 ---
 ## Contributor
@@ -14,6 +14,9 @@ This is the web designing and development project for Book Store.
 
 [Sunil Banmala]('banmalasunil0@gmail.com')
 
+[Luja shakya]('lujashakya.com.np')
+
+Anusha Bajracharya
 ## Copy Right 
 © Khwopa College of Engineering , Liwali Bhaktapur
 

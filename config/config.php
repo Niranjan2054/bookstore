@@ -13,7 +13,7 @@ if (ENVIRONMENT == 'DEVELOPMENT') {
 	define('DB_NAME', 'bookstore');
 	define('DB_USER', 'root');
 	define('DB_PWD', '');
-	define('SITE_URL', 'http://www.account.com/');
+	define('SITE_URL', 'http://www.bookstore.com/');
 }else{
 	error_reporting(0);
 	define('DB_HOST', 'sql212.byethost.com');

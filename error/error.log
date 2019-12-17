@@ -1,12 +1,2 @@
-Nov 27, 2019 01:49:04 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'neofusionsoc.pages' doesn't exist
-Nov 27, 2019 01:49:06 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'neofusionsoc.pages' doesn't exist
-Nov 27, 2019 01:49:22 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'neofusionsoc.pages' doesn't exist
-Nov 27, 2019 01:50:32 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'neofusionsoc.pages' doesn't exist
-Nov 27, 2019 01:50:37 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'neofusionsoc.pages' doesn't exist
-Nov 27, 2019 02:14:58 PM : ( run Query) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.view' doesn't exist
-Nov 27, 2019 02:14:58 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.institute' doesn't exist
-Nov 27, 2019 02:14:58 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.courses' doesn't exist
-Nov 27, 2019 02:14:58 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.banners' doesn't exist
-Nov 27, 2019 02:14:58 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.video' doesn't exist
-Nov 27, 2019 09:02:21 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.courses' doesn't exist
-Dec 10, 2019 05:23:25 PM : ( DB Select Data) : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bookstore.courses' doesn't exist
+Dec 15, 2019 05:10:37 PM : ( run Query) : SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'last_login'
+Dec 15, 2019 05:10:45 PM : ( run Query) : SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'last_login'
