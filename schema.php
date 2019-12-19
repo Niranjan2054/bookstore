@@ -62,6 +62,7 @@
 			created_date datetime default current_timestamp,
 			updated_date datetime on update current_timestamp
 		)",
+		
 		"institute" => "CREATE TABLE  IF NOT EXISTS institute
 		(
 			id int not null AUTO_INCREMENT PRIMARY KEY,
@@ -77,6 +78,17 @@
 			director varchar(50),
 			phone varchar(10),
 			added_by int,
+			created_date datetime default current_timestamp,
+			updated_date datetime on UPDATE current_timestamp
+		)",
+
+		"user_visit" => "CREATE TABLE  IF NOT EXISTS user_visit
+		(
+			id int not null AUTO_INCREMENT PRIMARY KEY,
+			Name text,
+			book_id int,
+			user_id int,
+			status enum('Active','Inactive') default 'Active',
 			created_date datetime default current_timestamp,
 			updated_date datetime on UPDATE current_timestamp
 		)",
@@ -108,6 +120,26 @@
 			updated_date datetime on UPDATE current_timestamp
 		)",
 		
+		"favourites" => "CREATE TABLE  IF NOT EXISTS favourites
+		(
+			id int not null AUTO_INCREMENT PRIMARY KEY,
+			user_id int,
+			book_id int,
+			status enum('Active','Inactive') default 'Inactive',
+			added_date datetime default current_timestamp,
+			updated_date datetime on UPDATE current_timestamp
+		)",
+
+		"user_history" => "CREATE TABLE  IF NOT EXISTS user_history
+		(
+			id int not null AUTO_INCREMENT PRIMARY KEY,
+			user_id int,
+			book_id int,
+			status enum('Active','Inactive') default 'Inactive',
+			added_date datetime default current_timestamp,
+			updated_date datetime on UPDATE current_timestamp
+		)",
+		
 		"notice" => "CREATE TABLE  IF NOT EXISTS notice
 		(
 			id int not null AUTO_INCREMENT PRIMARY KEY,
@@ -121,7 +153,9 @@
 		(
 			id int not null AUTO_INCREMENT PRIMARY KEY,
 			email varchar(50),
-			status enum('Active','Inactive') default 'Active',
+			subscribed_id int,
+			subscriber_id int,
+			status enum('subscribe','unsubscribe') default 'unsubscribe',
 			created_date datetime default current_timestamp,
 			updated_date datetime on UPDATE current_timestamp
 		)",
