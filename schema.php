@@ -117,6 +117,18 @@
 			created_date datetime default current_timestamp,
 			updated_date datetime on UPDATE current_timestamp
 		)",
+		"category" => "CREATE TABLE  IF NOT EXISTS categories
+		(
+			id int not null AUTO_INCREMENT PRIMARY KEY,
+			name varchar(50),
+			isparent enum('parent','child') default 'parent',
+			show_in_menu enum('show','hide') default 'show',
+			parentId int default 0,
+			added_by int,
+			status enum('Active','Inactive') default 'Active',
+			created_date datetime default current_timestamp,
+			updated_date datetime on UPDATE current_timestamp
+		)",
 		"subscriber" => "CREATE TABLE  IF NOT EXISTS subscriber
 		(
 			id int not null AUTO_INCREMENT PRIMARY KEY,

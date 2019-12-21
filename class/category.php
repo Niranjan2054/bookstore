@@ -10,7 +10,7 @@ class category extends database{
 	public function getallCategory($args=array(),$is_die=false){
 		$args = array(
 			'fields'  => array(
-					'id','title','summary','show_in_menu','is_parent','status','image','(SELECT title FROM categories as c WHERE c.id = categories.parent_id) as parent_cat'
+					'id','name','show_in_menu','isparent','status','(SELECT username FROM users as c WHERE c.id = categories.added_by) as added_by','(SELECT name FROM categories as c WHERE c.id = categories.parentId) as parentName','parentId'
 			)
 		);
 		return $this->selectdata($args,$is_die);
@@ -29,19 +29,19 @@ class category extends database{
 		$args = array(
 			'where' =>array(
 					'and' => array(
-						'is_parent' => 1,
-						'parent_id' => 0
+						'isparent' => 'parent',
+						'parentId' => 0
 					)
 				)
 			);
 		return $this->selectdata($args,$is_die);
 	}
-	public function getchildcategorybyparentid($parent_id,$is_die=false){
+	public function getchildcategorybyparentid($parentId,$is_die=false){
 		$args = array(
 			'where' =>array(
 					'and' => array(
-						'is_parent' => 0,
-						'parent_id' => $parent_id
+						'isparent' => 0,
+						'parentId' => $parentId
 					)
 				)
 			);
