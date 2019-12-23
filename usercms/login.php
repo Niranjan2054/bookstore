@@ -1,11 +1,11 @@
 <?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
-
+<link rel="stylesheet" type="text/css" href="./style.css">
 <!-- Main Body -->
                 <div class="app-main__outer">
                     <div class="app-main__inner">
                         <!-- Title Wrapper -->
-                        <div class="app-page-title">
+<!--                         <div class="app-page-title">
                             <div class="page-title-wrapper">
                                 <div class="page-title-heading">
                                     <div class="page-title-icon">
@@ -69,10 +69,10 @@
                                     </div>
                                 </div>    
                             </div>
-                        </div>  
+                        </div>   -->
 
                         <!-- Title Wrapper Ends           -->
-
+<!-- 
                         <div class="row">
                             <div class="col-md-6 col-xl-4">
                                 <div class="card mb-3 widget-content bg-midnight-bloom">
@@ -126,10 +126,33 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="row">
                             <!-- content Here -->
-
+                            <div class="container" id="login-back">
+                                <div class="form-wrapper">
+                                  <form action="./process/login.php" method="post">
+                                    <h1><b>Login<b></h1>
+                                    <div class="form-item">
+                                          <input type="text" name="username" id="username_input" required="required" placeholder="Username" autofocus required></input>
+                                    </div>
+                                    
+                                    <div class="form-item">
+                                          <input type="password" id="password_input" name="password" required="required" placeholder="Password" required></input>
+                                    </div>
+                                    <div class="form-item p-3">
+                                      <input type="checkbox" name="rememberme" >Remember me</input>
+                                    </div>
+                                    <div class="button-panel p-3">
+                                          <input type="submit" class="button" title="Log In" name="login" value="Log in"></input>
+                                    </div>
+                                  </form>
+                                  <div class="reminder">
+                                    <p><h4>Not a member? <a href="./signup.html">Sign up now</a></p></h4>
+                                    <p><a href="#"><b><h4>Forgot password?</a></p></b></h4>
+                                  </div> 
+                                </div>
+                            </div>
                             <!-- content Ends -->
                         </div>
                     </div>

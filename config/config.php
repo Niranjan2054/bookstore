@@ -11,9 +11,9 @@ if (ENVIRONMENT == 'DEVELOPMENT') {
 	error_reporting(E_ALL);
 	define('DB_HOST', 'localhost');
 	define('DB_NAME', 'bookstore');
-	define('DB_USER', 'root');
-	define('DB_PWD', '');
-	define('SITE_URL', 'http://www.bookstore.com/');
+	define('DB_USER', 'Lujashakya');
+	define('DB_PWD', 'zxdfRT56');
+	define('SITE_URL', 'localhost:8080/bookstore');
 }else{
 	error_reporting(0);
 	define('DB_HOST', 'sql212.byethost.com');
@@ -33,11 +33,11 @@ define('IMAGES_PATH', ASSESTS_PATH.'images/');
 define('JS_PATH', ASSESTS_PATH.'js/');
 define('FONTS_PATH', ASSESTS_PATH.'fonts/');
 
-define('ERROR_PATH', $_SERVER['DOCUMENT_ROOT'].'error/');
-define('CLASS_PATH', $_SERVER['DOCUMENT_ROOT'].'class/');
-define('CONFIG_PATH', $_SERVER['DOCUMENT_ROOT'].'config/');
-define('UPLOAD_PATH', $_SERVER['DOCUMENT_ROOT'].'upload/');
+define('ERROR_PATH', $_SERVER['DOCUMENT_ROOT'].'/bookstore/error/');
+define('CLASS_PATH', $_SERVER['DOCUMENT_ROOT'].'/bookstore/class/');
+define('CONFIG_PATH', $_SERVER['DOCUMENT_ROOT'].'/bookstore/config/');
+define('UPLOAD_PATH', $_SERVER['DOCUMENT_ROOT'].'/bookstore/upload/');
 define('UPLOAD_URL',SITE_URL.'/upload/');
 define('SITE_NAME', 'Book Store');
-define('UPLOAD_DIR', $_SERVER['DOCUMENT_ROOT'].'upload/');
+define('UPLOAD_DIR', $_SERVER['DOCUMENT_ROOT'].'/bookstore/upload/');
 define('ALLOWED_EXT',array('jpg','jpeg','png','gif','svg','bmp','json'));

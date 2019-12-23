@@ -129,7 +129,9 @@
                         </div>
                         <div class="row">
                             <!-- content Here -->
-
+                                <?php 
+                                    print_r($_SERVER);
+                                 ?>
                             <!-- content Ends -->
                         </div>
                     </div>

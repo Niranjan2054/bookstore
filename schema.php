@@ -1,5 +1,5 @@
 <?php 
-	include_once $_SERVER['DOCUMENT_ROOT'].'config/init.php';
+	include_once $_SERVER['DOCUMENT_ROOT'].'/bookstore/config/init.php';
 
 	$schema = new schema();
 	$table = array(
@@ -41,46 +41,52 @@
 			created_date datetime default current_timestamp,
 			updated_date datetime on update current_timestamp
 		)",
-		'view' => "CREATE TABLE  IF NOT EXISTS view
-		(
-			id int not null AUTO_INCREMENT PRIMARY KEY,
-			remote_addr text,
-			request_url text,
-			http_user_agent text,
-			logitude text,
-			latitude text,
-			status enum('Active','Inactive') default 'Active',
-			created_date datetime default current_timestamp,
-			updated_date datetime on update current_timestamp
-		)",
-		'video' => "CREATE TABLE  IF NOT EXISTS video
-		(
-			id int not null AUTO_INCREMENT PRIMARY KEY,
-			link text,
-			status enum('Active','Inactive') default 'Active',
-			added_by int,
-			created_date datetime default current_timestamp,
-			updated_date datetime on update current_timestamp
-		)",
+
+
+		// 'view' => "CREATE TABLE  IF NOT EXISTS view
+		// (
+		// 	id int not null AUTO_INCREMENT PRIMARY KEY,
+		// 	remote_addr text,
+		// 	request_url text,
+		// 	http_user_agent text,
+		// 	logitude text,
+		// 	latitude text,
+		// 	status enum('Active','Inactive') default 'Active',
+		// 	created_date datetime default current_timestamp,
+		// 	updated_date datetime on update current_timestamp
+		// )",
+
+
+		// 'video' => "CREATE TABLE  IF NOT EXISTS video
+		// (
+		// 	id int not null AUTO_INCREMENT PRIMARY KEY,
+		// 	link text,
+		// 	status enum('Active','Inactive') default 'Active',
+		// 	added_by int,
+		// 	created_date datetime default current_timestamp,
+		// 	updated_date datetime on update current_timestamp
+		// )",
 		
-		"institute" => "CREATE TABLE  IF NOT EXISTS institute
-		(
-			id int not null AUTO_INCREMENT PRIMARY KEY,
-			Name text,
-			abbr varchar(30),
-			location varchar(200),
-			map text,
-			status enum('Active','Inactive') default 'Active',
-			ishead enum('Head','Branch'),
-			estd varchar(50),
-			gmail varchar(50),
-			image varchar(100),
-			director varchar(50),
-			phone varchar(10),
-			added_by int,
-			created_date datetime default current_timestamp,
-			updated_date datetime on UPDATE current_timestamp
-		)",
+
+		// "institute" => "CREATE TABLE  IF NOT EXISTS institute
+		// (
+		// 	id int not null AUTO_INCREMENT PRIMARY KEY,
+		// 	Name text,
+		// 	abbr varchar(30),
+		// 	location varchar(200),
+		// 	map text,
+		// 	status enum('Active','Inactive') default 'Active',
+		// 	ishead enum('Head','Branch'),
+		// 	estd varchar(50),
+		// 	gmail varchar(50),
+		// 	image varchar(100),
+		// 	director varchar(50),
+		// 	phone varchar(10),
+		// 	added_by int,
+		// 	created_date datetime default current_timestamp,
+		// 	updated_date datetime on UPDATE current_timestamp
+		// )",
+
 
 		"user_visit" => "CREATE TABLE  IF NOT EXISTS user_visit
 		(
@@ -93,18 +99,20 @@
 			updated_date datetime on UPDATE current_timestamp
 		)",
 		
-		"enquiry" => "CREATE TABLE  IF NOT EXISTS enquiry
-		(
-			id int not null AUTO_INCREMENT PRIMARY KEY,
-			name varchar(50),
-			email varchar(50),
-			contact varchar(15),
-			courses varchar(50),
-			message text,
-			status enum('Active','Inactive') default 'Active',
-			created_date datetime default current_timestamp,
-			updated_date datetime on UPDATE current_timestamp
-		)",
+
+		// "enquiry" => "CREATE TABLE  IF NOT EXISTS enquiry
+		// (
+		// 	id int not null AUTO_INCREMENT PRIMARY KEY,
+		// 	name varchar(50),
+		// 	email varchar(50),
+		// 	contact varchar(15),
+		// 	courses varchar(50),
+		// 	message text,
+		// 	status enum('Active','Inactive') default 'Active',
+		// 	created_date datetime default current_timestamp,
+		// 	updated_date datetime on UPDATE current_timestamp
+		// )",
+		
 		
 		"contact" => "CREATE TABLE  IF NOT EXISTS contact
 		(

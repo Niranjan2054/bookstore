@@ -1,5 +1,5 @@
 <?php 
-include_once $_SERVER['DOCUMENT_ROOT'].'config/init.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/bookstore/config/init.php';
 debugger($_POST);
 $data = array();
 if (isset($_POST) && !empty($_POST)) {
