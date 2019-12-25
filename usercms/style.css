@@ -3,7 +3,7 @@
 /* background: rgb(135,135,139);
  background: linear-gradient(90deg, rgba(135,135,139,1) 0%, rgba(195,195,195,1) 49%, rgba(255,255,255,1) 100%);*/
  background-image: url("./assets/images/login/login-bg.jpg") ;
- background-position:25% 75%;
+ background-position:20% 80%;
 }
 
 .form-wrapper {
@@ -51,9 +51,9 @@ h4{
 
 }
 input[type='checkbox']{
-  background-position: 10px 50%;
   width: 10px;
   height: 10px;
+  margin-right: 5px;
   border-radius: 10%;
 }
 #password_input{
@@ -185,10 +185,9 @@ input[type="submit"]:focus;
 }
  .social{
   margin-bottom:20px;
-  width:auto;
+  width:300px;
   height:auto;
   border:none;
-  border-radius: 5%;
   font-family: sans-serif;
   font-weight:500;
   transition:0.2s ease;
