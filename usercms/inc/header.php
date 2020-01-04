@@ -1,4 +1,8 @@
 <!-- Header Starts -->
+<?php 
+    $user_data = array();
+    session_start();
+ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -54,7 +58,8 @@
                         </div>
                         <button class="close"></button>
                     </div>
-                    <ul class="header-menu nav">
+                    <!-- navigation menus part starts -->
+<!--                     <ul class="header-menu nav">
                         <li class="nav-item">
                             <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-database"> </i>
@@ -73,7 +78,9 @@
                                 Settings
                             </a>
                         </li>
-                    </ul>        </div>
+                    </ul>   -->     
+                    <!-- navigation menus part ends -->
+                </div>
                 <div class="app-header-right">
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
@@ -81,8 +88,20 @@
                                 <div class="widget-content-left">
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
-                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                            <img width="42" class="rounded-circle" 
+                                            <?php 
+                                                if(isset($_SESSION)&& !empty($_SESSION)){
+                                                    ?>
+                                                    src="assets/images/avatars/1.jpg">
+                                                    <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                                    <?php
+                                                } 
+                                                else{
+                                                    ?>
+                                                    >
+                                                    <?php 
+                                                }
+                                             ?> 
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
                                             <button type="button" tabindex="0" class="dropdown-item">User Account</button>
@@ -95,11 +114,26 @@
                                     </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
-                                    <div class="widget-heading">
-                                        Alina Mclourd
+                                    <div class="widget-heading" id="user_name">
+                                        <?php 
+                                         if(isset($_SESSION)&& !empty($_SESSION)){
+                                                $user_data['name'] = $_SESSION['user_name'];
+                                         }
+                                         else{
+                                            $user_data['name'] = " ";
+                                         }
+                                                echo $user_data['name'];
+                                         ?>
                                     </div>
-                                    <div class="widget-subheading">
-                                        VP People Manager
+                                    <div class="widget-subheading" id="user_verification">
+                                        <?php 
+                                         if(isset($_SESSION)&& !empty($_SESSION)){
+                                               echo "Not Verified";
+                                         }
+                                         else{
+                                            echo "";
+                                         }
+                                         ?>
                                     </div>
                                 </div>
                                 <div class="widget-content-right header-user-info ml-3">

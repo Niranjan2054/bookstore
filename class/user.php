@@ -20,6 +20,19 @@ class user extends database{
 		$data = $this->selectdata($args,$is_die);
 		return $data;
 	}
+	public function getUserByUsername($username,$is_die=false){
+		$args = array(
+			// 'fields'=>array('username','email','password','role','status'),
+			// 'fields'=>"username, email, password, role, status"
+			'where'=>array(
+				'and'=>array('username'=>$username)
+				// 'and'=>array('status'=>'Active','role'=>'Admin'),
+			)
+			// 'where' => "email = '".$username."'"
+		);
+		$data = $this->selectdata($args,$is_die);
+		return $data;
+	}
 	public function getallUser($args=array(),$is_die=false){
 		return $this->selectdata($args,$is_die);
 	}

@@ -6,13 +6,15 @@
 		"users" => "CREATE TABLE  IF NOT EXISTS users
 		(
 			id int not null AUTO_INCREMENT PRIMARY KEY,
+			name varchar(50),
 			username varchar(50),
 			email varchar(150),
 			password text not null,
 			activate_token text,
 			password_reset_token text,
 			session_token text,
-			role enum('Admin','Staff') default 'Staff',
+			address varchar(150),
+			role enum('Admin','Client') default 'Client',
 			status enum('Active','Inactive') default 'Active',
 			created_date datetime default current_timestamp,
 			updated_date datetime on update current_timestamp

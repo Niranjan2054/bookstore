@@ -141,7 +141,7 @@
                                           <input type="password" id="password_input" name="password" required="required" placeholder="Password" required></input>
                                     </div>
                                     <div class="form-item p-3">
-                                      <input type="checkbox" name="rememberme" >Remember me</input>
+                                      <input type="checkbox" name="remember" >Remember me</input>
                                     </div>
                                     <div class="button-panel p-3">
                                           <input type="submit" class="button" title="Log In" name="login" value="Log in"></input>
